@@ -1,0 +1,29 @@
+.sport-page {
+    width: 100vw;
+    padding: 5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
+        .description {
+            width: 60%;
+        }
+    }
+}

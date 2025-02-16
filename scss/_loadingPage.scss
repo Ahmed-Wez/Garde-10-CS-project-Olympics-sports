@@ -1,0 +1,60 @@
+.loading-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    span {
+        font-family: 'Cormorant Garamond', serif;
+        position: absolute;
+        color: #fff;
+        font-size: 30rem;
+        pointer-events: none;
+    }
+    span.first-letter {
+        top: -10rem;
+        left: 0;
+        transform: rotate(-0.1turn);
+    }
+    span.second-letter {
+        top: -10rem;
+        right: 0;
+        transform: rotate(0.1turn);
+    }
+    span.third-letter {
+        bottom: -10rem;
+        left: 0;
+        transform: rotate(-0.1turn);
+    }
+    span.fourth-letter {
+        bottom: -10rem;
+        right: 0;
+        transform: rotate(0.1turn);
+    }
+    span.fifth-letter {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    .loader-bg {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+        height: 5rem;
+        border: 5px solid #fff;
+        .loader {
+            width: 0;
+            height: 100%;
+            background: #fff;
+        }
+    }
+}
